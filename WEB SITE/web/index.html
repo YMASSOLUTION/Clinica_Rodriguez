@@ -8,15 +8,32 @@
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Scientist Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+  </script>
+
 </head>
 <body>
-
 <!-- header2 -->
 <div id="home" class="top-banner">
 	 <div class="header1">
@@ -42,7 +59,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>	
 <!---->
-
 <!--Menu-->
 <div class="header">
 	<div class="container">
@@ -73,20 +89,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 
 </div>	
-<!---->			
-
-<!--banner-->
+<!---->
 <div class="slider">
 	    <ul class="rslides callbacks callbacks1" id="slider1">
 	      <li id="callbacks1_s0" class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;"><img src="images/1.jpg" alt=""></li>
 	      <li id="callbacks1_s1" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out;"><img src="images/111.jpg" alt=""></li>
 	    </ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
     </div>
+	    
+			
+<!--banner-->
 <!---->
-
 <!--header-->
-
-
 <div class="content">
 	<div class="container">
 		<!--content-top-->
@@ -131,19 +145,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--//content-top-->
 		<!--cpntent-mid-->
 		<div class="content-middle">
-			<div class="col-md-7 content-mid">
+			<div class="col-md-5 content-mid">
 				<a href="single.html"><img class="img-responsive" src="images/md.jpg" alt=""></a>
 			</div>
-			<div class="col-md-5 content-mid1">
-				<i class="glyphicon glyphicon-filter"> </i>
+			<div class="col-md-7 content-mid1">
 				<h2>¿Quienes Somos?</h2>
-				<p>Somos una institución formada por un selecto staff de médicos altamente calificados en cirugía y medicina estética. Nuestra misión es dedicarnos a la investigación médica de nuevas técnicas y procedimientos, asistiendo a los últimos congresos de cirugía general: (mayor y menor) y (cirugia plastica - estética) en el mundo e innovando constantemente, aplicando el Protocolos de Seguridad en cada uno de nuestros procedimientos con la finalidad de lograr la armonía corporal de nuestros pacientes.
-Hemos sido premiados por nuestros servicios en diferentes tiempos y por diferentes instituciones a nivel nacional e internacional. 
-Esto nos compromete a seguir evolucionando y adaptándonos a las necesidades de los pacientes que la visitan.<br>
-La visión de Clínica Rodríguez es crear servicios de cirugía y medicina estética con los más altos estándares de calidad y seguridad a nivel internacional.
-</p>
-				<a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"> </i></a>
-			</div>
+				<p>Somos una institución formada por un selecto staff de médicos altamente calificados en cirugía y medicina estética. 
+				Nuestra misión es dedicarnos a la investigación médica de nuevas técnicas y procedimientos, asistiendo a los últimos congresos de 
+				cirugía general: (mayor y menor) y (cirugia plastica - estética) en el mundo e innovando constantemente, aplicando el Protocolos de 
+				Seguridad en cada uno de nuestros procedimientos con la finalidad de lograr la armonía corporal de nuestros pacientes.
+				Hemos sido premiados por nuestros servicios en diferentes tiempos y por diferentes instituciones a nivel nacional e internacional. 
+				Esto nos compromete a seguir evolucionando y adaptándonos a las necesidades de los pacientes que la visitan.
+				La visión de Clínica Rodríguez es crear servicios de cirugía y medicina estética con los más altos estándares de calidad y seguridad 
+				a nivel internacional.</p>
+				</div>
 			<div class="clearfix"> </div>
 		</div>
 		<!--//content-mid-->

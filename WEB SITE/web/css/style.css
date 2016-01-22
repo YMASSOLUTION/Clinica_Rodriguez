@@ -306,7 +306,7 @@ span.menu {
 }
 .banner-info{
 	text-align: center;
-    background: rgba(0, 0, 0, 0.47);
+    background: rgba(0, 0, 0, 0);
     padding: 3em 2em;
     margin-top: 11em;
 }
@@ -335,8 +335,6 @@ span.menu {
 	background:transparent;
 	border:2px solid #B8D29B;
 }
-
-
 html,body{
 	background:#fff;
 	font-size: 100%;
@@ -463,7 +461,15 @@ h1,h2,h3,h4,h5,h6,label,p{
 	line-height: 1.9em;
 	font-size: 1em;
 }
-
+.banner2 {
+    background: url(../images/1.jpg) no-repeat 0px -120px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height:640px;
+}
 .top{
 	background-color: rgba(125, 63, 152, 0.44);
 }
@@ -633,6 +639,19 @@ i.glyphicon.glyphicon-ok {
   background: #404040;
 }
 /*--//address--*/
+.gallery {
+    padding: 0.5em 0;
+}
+.gallery-left {
+    padding: 0 .2em;
+    margin-bottom: 0.45em;
+}
+.portfolio-bottom {
+    margin-top: 2em;
+}
+
+/*--header--*/
+
 /*--footer--*/
 .footer{
 	text-align: center;
@@ -1073,11 +1092,28 @@ h5.reply a:hover {
   padding-right: 22px;
 }
 /*--//single--*/
+@media (max-width: 1440px) {
+	.banner {
+		min-height: 710px;
+	}
+	
+	.banner-info {
+      margin-top: 10em;
+	}
+}
 @media(max-width:1366px){
 	
 }
 @media(max-width:1280px){
-	
+	.banner-info h3 {
+      font-size: 3em;
+    }
+	.banner {
+    min-height: 592px;
+	}
+	.banner-info {
+		margin-top: 8em;
+	}
 }
 @media(max-width:1210px){
 .top-grid:before {
@@ -1090,6 +1126,15 @@ h5.reply a:hover {
 }
 }
 @media(max-width:1024px){
+	.banner2 {
+		min-height: 500px;
+	}
+	.banner-info h3 {
+		font-size: 2.8em;
+	}
+	.banner-info {
+		margin-top: 6em;
+	}
 .header {
  
 }
@@ -1153,6 +1198,9 @@ h4.media-heading {
 }
 }
 @media(max-width:1001px){
+	.banner2 {
+			min-height: 416px;
+		}
 .top-grid:before {
   border-bottom: 208px solid rgba(0, 188, 228, 0.44);
   border-left: 76px solid rgba(60, 128, 168, 0);
@@ -1165,6 +1213,9 @@ h4.media-heading {
 }
 }
 @media(max-width:768px){
+	.banner2 {
+		min-height: 416px;
+	}
 .logo h1 a {
   width: 210px;
   height: 180px;
@@ -1350,6 +1401,9 @@ h1.grid2 {
 }
 }
 @media(max-width:640px){
+	.banner {
+		min-height: 335px;
+	}
 .logo h1 {
   font-size: 2.2em;
 }
@@ -1424,6 +1478,9 @@ h3.typo1 {
 }
 
 @media (max-width: 600px){
+	.banner2 {
+		min-height: 248px;
+	}
 .top-grid:before {
   border-bottom: 175px solid rgba(0, 188, 228, 0.44);
   border-left: 45px solid rgba(60, 128, 168, 0);
