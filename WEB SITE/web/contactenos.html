@@ -82,12 +82,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.4583321947206!2d-79.03177917084658!3d-8.118446671969952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDcnMDYuNCJTIDc5wrAwMSc1Mi40Ilc!5e0!3m2!1ses!2spe!4v1448745275326" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			 <div class="contact-bottom">
-				 <form>
-					<input type="text"  value="Nombre" placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'First Name';}">	
-					<input type="text"  value="Apellido" placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Last Name';}">				
-					<input type="text"  value="Email" placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email Address';}">
-					<textarea placeholder=""  onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}" >Escriba aquí su consulta</textarea>	
-					<input type="submit" value="Enviar">
+				 <form action="for.php" method="post">
+					<input type="text"  value="Nombre" placeholder="" name="nombre" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Nombre';}">	
+					<input type="text"  value="Apellido" placeholder="" name="apellido" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Apellido';}">
+					<input type="text"  value="Telefono" placeholder="" name="telefono" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Telefono';}">					
+					<input type="text"  value="Email" placeholder="" name="email" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email';}">
+					<textarea placeholder="" value="Mensaje" name="mensaje" id="mensaje" onfocus="this.value='';"  onblur="if (this.value == '') {this.value = 'Escriba aqui su mensaje';}" >Escriba aqui su mensaje</textarea>
+					<input type="submit" name="submit" value="Enviar">
 				</form>	
 			</div>			
 		</div>
